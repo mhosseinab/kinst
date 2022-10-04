@@ -1,0 +1,6 @@
+{
+  "name": "CPCard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPCard.js"
+}

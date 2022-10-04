@@ -1,0 +1,104 @@
+.root {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  .form {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    // width: 600px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    .imageLogoDiv {
+      text-align: center;
+    }
+
+    .imageLogo {
+      width: 200px;
+      margin: 0 auto;
+      padding: 3px;
+    }
+
+    @media (max-height: 550px) {
+      display: block;
+    }
+
+    form {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+      direction: rtl;
+
+      // @media (min-width: 576px) {
+      //   width: 40%;
+      //   margin: 'auto';
+      // }
+
+      // @media (min-width: 768px) {
+      //   width: 50%;
+      //   margin: auto;
+      // }
+
+      // @media (min-width: 992px) {
+      //   width: 100%;
+      //   margin: 0 60px;
+      // }
+
+      // @media (max-height: 550px) {
+      //   width: 100%;
+      //   margin: 0 auto;
+      //   padding: 120px 60px;
+      // }
+
+      .description {
+        margin-bottom: 15px;
+        line-height: 35px;
+      }
+
+      :global(.controlLabel) {
+        margin: 5px;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        right: 5px;
+        top: 5px;
+        font-size: 12px;
+      }
+
+      .userName {
+        input {
+          border-bottom: none !important;
+        }
+      }
+
+      .userName,
+      .password {
+        input {
+          text-align: left;
+          height: 55px;
+          padding: 30px 10px 5px 10px;
+          font-size: 14px !important;
+          direction: ltr;
+
+          &:focus {
+            border-left: 5px solid #0f367b !important;
+          }
+        }
+      }
+
+      .loginBtn {
+        width: 169px;
+        height: 48px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 0;
+        background-color: #0f367b !important;
+        margin-top: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+@import '../../variables';
+
+.formGroup {
+  position: relative;
+  margin-bottom: 25px;
+
+  input {
+    height: 1.9rem;
+  }
+
+  input[type='file'] {
+    line-height: 1;
+  }
+
+  .bar {
+    position: relative;
+    border-bottom: 0.0625rem solid #fff;
+    display: block;
+
+    &::before {
+      content: '';
+      height: 0.125rem;
+      width: 0;
+      left: 50%;
+      bottom: -0.0625rem;
+      position: absolute;
+      background: #337ab7;
+      -webkit-transition: left 0.28s ease, width 0.28s ease;
+      transition: left 0.28s ease, width 0.28s ease;
+      z-index: 2;
+    }
+  }
+
+  input[type='file'] ~ .bar {
+    display: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input,
+  textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 14px;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  select {
+    width: 100%;
+    font-size: 1rem;
+    height: 1.6rem;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    background: none;
+    border: none;
+    line-height: 1.6;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .label {
+    position: absolute;
+    top: 0.25rem;
+    pointer-events: none;
+    padding-left: 0.125rem;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    right: 0;
+  }
+
+  select,
+  input:focus,
+  input:valid,
+  textarea:focus,
+  textarea:valid {
+    color: #fff;
+  }
+
+  select ~ .label,
+  input:focus ~ .label,
+  input:valid ~ .label,
+  textarea:focus ~ .label,
+  textarea:valid ~ .label {
+    font-size: 0.8rem;
+    color: #337ab7;
+    top: -1rem;
+    right: 0;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  select:focus ~ .label,
+  input:focus ~ .label,
+  textarea:focus ~ .label {
+    color: #337ab7;
+  }
+
+  select:focus ~ .bar::before,
+  input:focus ~ .bar::before,
+  textarea:focus ~ .bar::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
+:global {
+  .inline {
+    display: flex;
+
+    :global {
+      .CPInput-controlLabel-piYhc {
+        width: 80px;
+      }
+
+      .ant-input-affix-wrapper {
+        flex: 1;
+      }
+    }
+
+    .controlLabel {
+      margin: 5px 5px 0 10px;
+      display: inline-block;
+    }
+  }
+}
+
+.input {
+  position: relative;
+  color: #000c17;
+
+  :global(.ltrInput .ant-input-group) {
+    direction: ltr;
+  }
+
+  :global(.ltrInput) input {
+    direction: ltr;
+  }
+}

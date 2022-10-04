@@ -1,0 +1,8 @@
+version: "2.1"
+
+services:
+  frontend:
+    restart: always
+    image: gitlabcom/kins/dashboard/master:stable
+    ports:
+      - 3001:3000

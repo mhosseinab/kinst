@@ -1,0 +1,104 @@
+{
+    "aggregations": {
+        "damage_type": {
+            "aggregations": {
+                "damage_type_sum_damage_amount": {
+                    "sum": {
+                        "field": "sum_damage_amount"
+                    }
+                },
+                "status": {
+                    "aggregations": {
+                        "status_sum_damage_amount": {
+                            "sum": {
+                                "field": "sum_damage_amount"
+                            }
+                        }
+                    },
+                    "terms": {
+                        "field": "status.keyword",
+                        "min_doc_count": 0,
+                        "size": 100
+                    }
+                }
+            },
+            "terms": {
+                "field": "damage_type.keyword",
+                "min_doc_count": 0,
+                "size": 100000
+            }
+        }
+    },
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "bool": {
+                        "should": [
+                            {
+                                "term": {
+                                    "location_usage": "1"
+                                }
+                            },
+                            {
+                                "term": {
+                                    "location_usage": "2"
+                                }
+                            },
+                            {
+                                "term": {
+                                    "location_usage": "3"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "exists": {
+                        "field": "reference_code"
+                    }
+                },
+                {
+                    "bool": {
+                        "must": {
+                            "bool": {
+                                "should": {
+                                    "term": {
+                                        "company_id.keyword": "011"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "bool": {
+                        "must": [
+                            {
+                                "range": {
+                                    "casuality_date": {
+                                        "from": "2020-04-20T07:30:00Z",
+                                        "include_lower": true,
+                                        "include_upper": true,
+                                        "to": null
+                                    }
+                                }
+                            },
+                            {
+                                "range": {
+                                    "casuality_date": {
+                                        "from": null,
+                                        "include_lower": true,
+                                        "include_upper": true,
+                                        "to": "2020-05-06T07:30:00Z"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "size": 0
+}

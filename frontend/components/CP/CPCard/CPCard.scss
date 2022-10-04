@@ -1,0 +1,84 @@
+@import '../../variables.scss';
+
+.card {
+  padding: 20px;
+  border-top: 2px solid;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.12);
+
+  :global(.ant-card-meta-avatar) {
+    padding-right: 0;
+    padding-left: 16px;
+    float: right;
+  }
+}
+
+.root {
+  border-bottom: 1px solid #d9d9d9 !important;
+  margin-bottom: 15px;
+  border-top-width: 2px;
+  border-radius: 2px;
+
+  :global(.ant-collapse-header:focus) {
+    outline: 0 !important;
+  }
+
+  :global(.ant-collapse-item .ant-collapse-header) {
+    background: #fff !important;
+  }
+
+  :global(.ant-collapse-header .arrow) {
+    position: relative !important;
+    float: left;
+    left: 0 !important;
+  }
+
+  .extra {
+    float: left;
+  }
+
+  .title {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 400;
+  }
+
+  .more {
+    margin-left: 9px;
+  }
+
+  .closeIcon {
+    font-size: 16px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    width: 32px !important;
+    text-align: center !important;
+    margin-top: 7px !important;
+    line-height: 32px !important;
+    float: left;
+
+    &:hover {
+      background: #d9d9d9 !important;
+    }
+  }
+}
+
+.default {
+  border-top-color: #d2d6de;
+}
+
+.success {
+  border-top-color: $color-success;
+}
+
+.info {
+  border-top-color: $color-info;
+}
+
+.warning {
+  border-top-color: $color-warning;
+}
+
+.danger {
+  border-top-color: $color-danger;
+}
+

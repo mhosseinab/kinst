@@ -1,0 +1,43 @@
+body {
+  height: auto !important;
+  font-family: iranyekan !important;
+  direction: rtl;
+}
+
+@media print {
+  .noprint {
+    visibility: hidden;
+    display: none;
+    height: 0;
+  }
+  :global {
+    font-size: small;
+  }
+  /* img{
+    width: 110px;
+  } */
+
+  .ant-layout-header {
+    display: none;
+    visibility: hidden;
+  }
+
+  .ant-descriptions-title,
+  .ant-statistic-content-value-int {
+    font-size: small;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-content,
+  .ant-descriptions-bordered .ant-descriptions-item-label {
+    padding: 2px;
+  }
+}
+
+.mastash {
+  font-size: small;
+}
+.mastash .ant-table-column-title,
+.mastash .ant-table-tbody td {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}

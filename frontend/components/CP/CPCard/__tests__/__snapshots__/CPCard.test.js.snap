@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CPCard Snapshot Testing CPCard Snapshot" 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    
+  </div>
+</div>
+`;

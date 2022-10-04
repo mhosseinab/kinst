@@ -1,0 +1,45 @@
+.root {
+  margin-bottom: 12px !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select {
+  width: 200px;
+}
+
+.selectCity {
+  width: 200px;
+  margin-right: 8px;
+}
+
+.selectAndButton {
+  display: flex;
+  flex-direction: row;
+
+  button {
+    margin-right: 10px;
+  }
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.status {
+  flex-direction: row-reverse;
+}
+
+.textAccept {
+  font-size: 12px;
+  margin-left: 5px;
+}

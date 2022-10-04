@@ -1,0 +1,6 @@
+{
+  "name": "CPAvatar",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPAvatar.js"
+}

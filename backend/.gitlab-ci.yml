@@ -1,0 +1,22 @@
+variables:
+  RELEASE_IMAGE_NAME: "$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:stable"
+
+stages:
+  # - build-develop
+  - build
+
+build:
+  stage: build
+  tags: [kowsar]
+  variables:
+    GIT_SSL_NO_VERIFY: "1"
+  before_script:
+    - export GIT_SSL_NO_VERIFY=1
+    - GIT_SSL_NO_VERIFY=1
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  script:
+    - docker build --tag "$RELEASE_IMAGE_NAME" .
+    # - docker push "$RELEASE_IMAGE_NAME"
+    - docker-compose up -d
+  only:
+    - master

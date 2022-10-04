@@ -1,0 +1,51 @@
+version: "2"
+
+services:
+  gateway:
+    restart: always
+    image: gitlab.abrbit.com:5555/camelon/kowthar-gateway/master:stable
+    volumes:
+      - /home/kowthar/www/media:/home/kowthar/www/media
+    environment:
+      - MEDIA_ROOT=/home/kowthar/www/media
+      - ES_HOST=http://elasticsearch:9200/
+      - CDN_PREFIX=http://tavanir.example.com/gw/
+      - ES_INDEX=request.v3
+      - ES_TAVANIR_INDEX=case.v2
+      - DISABLE_STEPS=1
+      - DB_DNS=kowthar_user:fg4wf5VSERGSWGSAFAAREER@tcp(10.0.1.137:3306)/kowthar_ins?charset=utf8&parseTime=True&loc=Local
+    ports:
+      - 8090:8080
+    links:
+      - elasticsearch
+
+#  gateway2:
+#    restart: always
+#    image: gitlab.abrbit.com:5555/camelon/kowthar-gateway/master:stable
+#    volumes:
+#      - /home/kowthar/www/media:/home/kowthar/www/media
+#    environment:
+#      - MEDIA_ROOT=/home/kowthar/www/media
+#      - ES_HOST=http://elasticsearch:9200/
+#      - CDN_PREFIX=http://tavanir-damage.example.com/gw/
+#      - ES_INDEX=request.v3
+#      - DISABLE_STEPS=0
+#      - DB_DNS=kowthar_user:fg4wf5VSERGSWGSAFAAREER@tcp(10.0.1.137:3306)/kowthar_ins?charset=utf8&parseTime=True&loc=Local
+#    ports:
+#      - 8091:8080
+#    links:
+#      - elasticsearch
+
+  elasticsearch:
+    restart: always
+    image: gitlab.abrbit.com:5555/common/images/elasticsearch:7.5.1
+    environment:
+      - "discovery.type=single-node"
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data:rw
+    ports:
+      - 9200:9200
+
+volumes:
+  esdata1:
+    driver: local

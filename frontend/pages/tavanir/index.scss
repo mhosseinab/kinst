@@ -1,0 +1,29 @@
+.root {
+  display: block;
+}
+
+.excel-btn {
+  background-color: #1d6f42;
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.excel-btn:hover {
+  background-color: #175a35 !important;
+  color: #fff;
+  border-color: #fff;
+}
+
+.excel-btn:focus {
+  background-color: #176339;
+  color: #fff;
+}
+
+.excel-btn i {
+  padding-bottom: 3px;
+}
+.loading-large{
+  text-align: center;
+  margin: 100px 50px;
+}

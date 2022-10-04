@@ -1,0 +1,59 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+/*
+ * Typography
+ * ======================================================================== */
+
+$font-family-base: iranyekan, sans-serif, 'Segoe UI', 'HelveticaNeue-Light';
+
+/*
+ * Layout
+ * ======================================================================== */
+
+$max-content-width: 1000px;
+
+/*
+ * Media queries breakpoints
+ * ======================================================================== */
+
+$screen-xs-min: 480px; /* Extra small screen / phone */
+$screen-sm-min: 768px; /* Small screen / tablet */
+$screen-md-min: 992px; /* Medium screen / desktop */
+$screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+/*
+ * color
+ * ======================================================================== */
+
+$color-primary: #02558b;
+
+$color-danger: #b72534;
+$color-warning: #d9b310;
+$color-warning-2: #ff6700;
+$color-info: #01b4e0;
+$color-success: #a7ca71;
+
+$success-text: #619d06;
+
+$color-white: #fff;
+$color-gray1: rgb(220, 220, 220); //#DCDCDC
+$color-gray2: rgb(211, 211, 211); //#D3D3D3
+$color-gray3: rgb(192, 192, 192); //#C0C0C0
+$color-gray4: rgb(169, 169, 169); //#A9A9A9
+$color-gray5: rgb(128, 128, 128); //#808080
+$color-gray6: rgb(105, 105, 105); //#696969
+$color-black: #000;
+
+$border: #d9d9d9;
+$border-light: #f4f4f4;
+$red-button: #f5222d;
+
+$color-background: #ecf0f5;
+

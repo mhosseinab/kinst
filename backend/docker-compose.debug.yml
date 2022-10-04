@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  gateway:
+    restart: always
+    image: gitlab.abrbit.com:5555/camelon/kowthar-gateway/master:stable
+    volumes:
+    - /home/kowthar/www/media:/home/kowthar/www/media
+    environment:
+      - MEDIA_ROOT=/home/kowthar/www/media
+      - CDN_PREFIX=http://tavanir.example.com/gw/
+      - DB_DNS=kowthar_user:fg4wf5VSERGSWGSAFAAREER@tcp(37.152.177.13:3306)/kowthar_ins?charset=utf8&parseTime=True&loc=Local
+    ports:
+      - 8090:8080

@@ -1,0 +1,1098 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable no-duplicate-selectors */
+
+body {
+  font-size: 16px !important;
+}
+
+.rtlLayout {
+  direction: rtl;
+  font-family: iranyekan, Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+  font-weight: 400;
+}
+
+.ant-rate,
+.ant-rate,
+.ant-carousel,
+.ant-card,
+.ant-avatar,
+.ant-form,
+.ant-tree,
+.ant-form-item,
+.ant-menu,
+.ant-divider,
+.ant-tabs,
+.ant-pagination,
+.ant-popover,
+.ant-time-picker,
+.ant-time-picker-input,
+.ant-time-picker-panel-input,
+.ant-progress,
+.ant-tooltip,
+.ant-btn,
+.ant-switch,
+.ant-radio,
+.ant-radio-wrapper,
+.ant-radio-group,
+.ant-upload-list,
+.ant-upload,
+.ant-breadcrumb,
+.ant-notification,
+.ant-back-top,
+.ant-collapse,
+.ant-spin,
+.ant-dropdown,
+.ant-timeline,
+.ant-modal,
+.ant-select,
+.ant-table,
+.ant-list,
+.ant-slider,
+.ant-badge,
+.ant-tabs,
+.ant-input,
+.ant-steps,
+.ant-anchor,
+.ant-alert,
+.ant-message,
+.ant-transfer,
+.ant-checkbox,
+.ant-input-group,
+.ant-select-tree,
+.ant-fullcalendar,
+.ant-input-number,
+.ant-mention-wrapper,
+.ant-cascader-picker,
+.ant-checkbox-group,
+.ant-select-dropdown,
+.ant-mention-dropdown,
+.ant-calendar-picker,
+.ant-checkbox-wrapper,
+.ant-time-picker-panel,
+.ant-input-affix-wrapper,
+.ant-select-tree-dropdown,
+.ant-select-tree-checkbox,
+.ant-select-auto-complete,
+.ant-calendar-picker-container,
+.ant-select-tree-checkbox-group,
+.ant-select-tree-checkbox-wrapper,
+.ant-pagination-item {
+  font-family: iranyekan, Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+.rtlLayout #app .ltr {
+  direction: ltr;
+}
+
+.has-success.has-feedback::after,
+.has-warning.has-feedback::after,
+.has-error.has-feedback::after,
+.is-validating.has-feedback::after {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  right: auto;
+}
+
+.rtlLayout #app .ltr-form .ant-form-item-control-wrapper,
+.rtlLayout #app .ltr-form .ant-input-group-wrapper {
+  direction: ltr;
+}
+
+.ant-form-explain {
+  direction: rtl;
+}
+
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.rtlLayout #app .ant-form-item-required::before {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+.rtlLayout #app .ant-col-xs-1,
+.rtlLayout #app .ant-col-xs-2,
+.rtlLayout #app .ant-col-xs-3,
+.rtlLayout #app .ant-col-xs-4,
+.rtlLayout #app .ant-col-xs-5,
+.rtlLayout #app .ant-col-xs-6,
+.rtlLayout #app .ant-col-xs-7,
+.rtlLayout #app .ant-col-xs-8,
+.rtlLayout #app .ant-col-xs-9,
+.rtlLayout #app .ant-col-xs-10,
+.rtlLayout #app .ant-col-xs-11,
+.rtlLayout #app .ant-col-xs-12,
+.rtlLayout #app .ant-col-xs-13,
+.rtlLayout #app .ant-col-xs-14,
+.rtlLayout #app .ant-col-xs-15,
+.rtlLayout #app .ant-col-xs-16,
+.rtlLayout #app .ant-col-xs-17,
+.rtlLayout #app .ant-col-xs-18,
+.rtlLayout #app .ant-col-xs-19,
+.rtlLayout #app .ant-col-xs-20,
+.rtlLayout #app .ant-col-xs-21,
+.rtlLayout #app .ant-col-xs-22,
+.rtlLayout #app .ant-col-xs-23,
+.rtlLayout #app .ant-col-xs-24 {
+  float: right;
+}
+
+@media (min-width: 576px) {
+  .rtlLayout #app .ant-col-sm-1,
+  .rtlLayout #app .ant-col-sm-2,
+  .rtlLayout #app .ant-col-sm-3,
+  .rtlLayout #app .ant-col-sm-4,
+  .rtlLayout #app .ant-col-sm-5,
+  .rtlLayout #app .ant-col-sm-6,
+  .rtlLayout #app .ant-col-sm-7,
+  .rtlLayout #app .ant-col-sm-8,
+  .rtlLayout #app .ant-col-sm-9,
+  .rtlLayout #app .ant-col-sm-10,
+  .rtlLayout #app .ant-col-sm-11,
+  .rtlLayout #app .ant-col-sm-12,
+  .rtlLayout #app .ant-col-sm-13,
+  .rtlLayout #app .ant-col-sm-14,
+  .rtlLayout #app .ant-col-sm-15,
+  .rtlLayout #app .ant-col-sm-16,
+  .rtlLayout #app .ant-col-sm-17,
+  .rtlLayout #app .ant-col-sm-18,
+  .rtlLayout #app .ant-col-sm-19,
+  .rtlLayout #app .ant-col-sm-20,
+  .rtlLayout #app .ant-col-sm-21,
+  .rtlLayout #app .ant-col-sm-22,
+  .rtlLayout #app .ant-col-sm-23,
+  .rtlLayout #app .ant-col-sm-24 {
+    float: right;
+  }
+}
+
+.rtlLayout #app .ant-form-item-control > * {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/****************** ant-input *********************/
+.rtlLayout .ant-input-affix-wrapper .ant-input:not(:first-child) {
+  padding-right: 30px;
+  padding-left: unset;
+}
+
+.rtlLayout #app form .has-feedback .ant-input {
+  padding-right: 10px;
+}
+
+.ant-input-affix-wrapper .ant-input-prefix {
+  right: 12px;
+  left: unset;
+}
+
+.rtlLayout .ant-input-affix-wrapper .ant-input-suffix {
+  left: 12px;
+  right: unset;
+}
+
+.ant-input {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-bottom: 0;
+}
+
+.has-feedback .ant-input {
+  padding-right: 11px !important;
+}
+
+.has-error.has-feedback .ant-form-item-children-icon,
+.has-success.has-feedback .ant-form-item-children-icon,
+.has-warning.has-feedback .ant-form-item-children-icon,
+.is-validating.has-feedback .ant-form-item-children-icon {
+  right: auto;
+  left: 0;
+  z-index: 0 !important;
+}
+
+.ant-form-item-control {
+  line-height: 1.5 !important;
+}
+
+.ant-input-group-addon {
+  border-radius: 0 !important;
+}
+
+.ant-input-group-addon:first-child {
+  border-left: 0 !important;
+  border-right: 1px solid #ddd;
+}
+
+.has-error .ant-input-group-addon:first-child {
+  border-color: #f5222d !important;
+}
+
+/****************** ant-tabs *********************/
+.rtlLayout .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content-animated {
+  display: block;
+}
+
+.rtlLayout .ant-tabs-nav.ant-tabs-nav-animated {
+  direction: ltr;
+  text-align: right;
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+  margin: 0 10px 0 0;
+}
+
+.ant-select-dropdown {
+  min-width: 80px !important;
+}
+
+.ant-select-dropdown .ant-select-dropdown-menu {
+  direction: rtl;
+  text-align: right;
+  padding-right: 0;
+}
+
+.ant-select-selection-selected-value,
+.rtlLayout .ant-select-selection-selected-value {
+  float: right !important;
+  padding-right: 0 !important;
+  padding-left: 20px !important;
+}
+
+.ant-select-arrow,
+.rtlLayout .ant-select-arrow {
+  left: 11px;
+  right: auto !important;
+}
+
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+  border-color: #85c5ff !important;
+  box-shadow: none !important;
+}
+
+.rtlLayout .ant-input-group.ant-input-group-compact > *:first-child,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-select:first-child > .ant-select-selection,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-calendar-picker:first-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-select-auto-complete:first-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-cascader-picker:first-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-mention-wrapper:first-child .ant-mention-editor,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-time-picker:first-child .ant-time-picker-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.rtlLayout .ant-input-group.ant-input-group-compact > *:last-child,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-select:last-child > .ant-select-selection,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-calendar-picker:last-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-select-auto-complete:last-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-cascader-picker:last-child .ant-input,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-mention-wrapper:last-child .ant-mention-editor,
+.rtlLayout .ant-input-group.ant-input-group-compact > .ant-time-picker:last-child .ant-time-picker-input {
+  border-radius: 4px 0 0 4px;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+
+.rtlLayout .ant-select-search__field__mirror {
+  left: unset;
+  right: -9999px;
+}
+
+.ant-time-picker {
+  width: 100% !important;
+}
+
+.ant-time-picker-input {
+  border-radius: 2px !important;
+  font-size: 12px;
+  text-align: center;
+}
+
+form .has-feedback .ant-calendar-picker-clear,
+form .has-feedback .ant-calendar-picker-icon,
+form .has-feedback .ant-cascader-picker-clear,
+form .has-feedback .ant-input-search:not(.ant-input-search-enter-button) .ant-input-suffix,
+form .has-feedback .ant-time-picker-clear,
+form .has-feedback .ant-time-picker-icon {
+  right: 10px;
+}
+
+.ant-form-item-children {
+  position: unset !important;
+}
+
+/****************** ant-popover *********************/
+
+.ant-popover {
+  text-align: justify !important;
+  max-width: 340px !important;
+}
+
+.ant-select-selection__placeholder,
+.ant-select-search__field__placeholder {
+  text-align: right !important;
+}
+
+.ant-table {
+  overflow-x: auto;
+}
+
+.ant-table table th,
+.ant-table table td {
+  /* white-space: nowrap; */
+  text-align: right;
+}
+
+.ant-table table td {
+  font-size: 13px !important;
+}
+
+.ant-table table th {
+  white-space: nowrap !important;
+}
+
+.ant-table-tbody > tr > td {
+  /* word-break: break-all !important; */
+  vertical-align: middle !important;
+}
+
+.ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr:hover > td,
+.ant-table-tbody > tr:hover > td {
+  background: rgba(220, 220, 220, 0.3) !important;
+  cursor: pointer;
+}
+
+.ant-table-fixed-left {
+  left: auto;
+  right: 0;
+}
+
+.ant-table-fixed-right {
+  right: auto;
+  left: 0;
+}
+
+.ant-table-body {
+  direction: rtl !important;
+}
+
+.ant-table-fixed-left .ant-table-body-inner {
+  margin-left: -20px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.ant-table-selection,
+.ant-table-selection-column {
+  text-align: center !important;
+}
+
+.ant-table-tbody > tr > td.ant-table-selection-column,
+.ant-table-thead > tr > th.ant-table-selection-column {
+  min-width: 45px;
+  width: 45px;
+}
+
+.ant-table-tbody th,
+.ant-table-tbody td {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+/****************** ant-pagination *******************************/
+.rtlLayout .ant-pagination-options-size-changer.ant-select {
+  margin-right: 0;
+  margin-left: 8px;
+  direction: ltr;
+}
+
+.ant-pagination.mini .ant-pagination-item {
+  line-height: 22px;
+}
+
+.ant-pagination-item-link .anticon-left {
+  transform: rotate(180deg);
+  vertical-align: text-top;
+}
+
+.ant-pagination-item-link .anticon-right {
+  transform: rotate(180deg);
+  vertical-align: text-top;
+}
+
+.anticon.anticon-double-right.ant-pagination-item-link-icon {
+  transform: rotate(180deg);
+}
+
+.anticon.anticon-double-left.ant-pagination-item-link-icon {
+  transform: rotate(180deg);
+}
+
+.ant-pagination-options {
+  margin-right: 16px;
+  margin-left: 0;
+}
+
+.ant-pagination-next {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.ant-pagination {
+  margin: 10px 0;
+}
+
+/****************** ant-menu *******************************/
+
+/* ::selection {
+  background: #f7f7f7 !important;
+  text-shadow: none !important;
+  color: #fff !important;
+} */
+
+.rtlLayout #app .ant-menu-sub.ant-menu-inline {
+  border: none;
+}
+
+.rtlLayout #app .ant-menu-vertical-left {
+  border-left: 1px solid #e8e8e8;
+  border-right: none;
+}
+
+.rtlLayout #app .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.rtlLayout #app .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.rtlLayout #app .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.rtlLayout #app .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow {
+  left: 16px;
+  right: auto;
+}
+
+.rtlLayout .ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.rtlLayout #app .ant-menu-item .anticon,
+.rtlLayout #app .ant-menu-submenu-title .anticon {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.rtlLayout #app .ant-menu-submenu .ant-menu-submenu-title {
+  padding-left: 0 !important;
+  padding-right: 16px;
+}
+
+.rtlLayout #app .ant-menu-inline-collapsed .ant-menu-submenu .ant-menu-submenu-title {
+  padding: 0 32px !important;
+}
+
+.rtlLayout #app .ant-menu-sub.ant-menu-inline > .ant-menu-item,
+.rtlLayout #app .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  padding-right: 30px;
+  padding-left: 5px !important;
+}
+
+.rtlLayout #app .ant-menu-vertical .ant-menu-item::after,
+.rtlLayout #app .ant-menu-vertical-left .ant-menu-item::after,
+.rtlLayout #app .ant-menu-vertical-right .ant-menu-item::after,
+.rtlLayout #app .ant-menu-inline .ant-menu-item::after {
+  right: auto;
+  left: 0;
+  border-left: 3px solid #1890ff;
+  border-right: none;
+}
+
+.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+  background-color: #00d2be !important;
+}
+
+.rtlLayout #app .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.rtlLayout #app .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.rtlLayout #app .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.rtlLayout #app .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.rtlLayout #app .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.rtlLayout #app .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.rtlLayout #app .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.rtlLayout #app .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
+  background:
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#00d2be),
+      to(#00d2be)
+    );
+  background: -webkit-linear-gradient(left, #00d2be, #00d2be);
+  background: -o-linear-gradient(left, #00d2be, #00d2be);
+  background: linear-gradient(to right, #00d2be, #00d2be);
+}
+
+/***************** ant-dropdown ******************************/
+
+.rtlLayout #app .ant-dropdown-menu {
+  padding: 5px 0;
+  text-align: right;
+}
+
+.rtlLayout #app .ant-dropdown-menu-item > a,
+.rtlLayout #app .ant-dropdown-menu-submenu-title > a {
+  padding: 5px 15px;
+}
+
+.rtlLayout #app .ant-dropdown-menu-item:hover,
+.rtlLayout #app .ant-dropdown-menu-submenu-title:hover {
+  background-color: #f7f7f7;
+}
+
+/******************************* ant-collapse *******************************/
+
+.rtlLayout .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-right: 15px;
+}
+
+.rtlLayout .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  left: 16px;
+  right: auto;
+}
+
+/******************************* ant-card *******************************/
+
+.ant-card-head-title {
+  font-size: 18px !important;
+}
+
+/******************************* ant-tooltip *******************************/
+
+.ant-tooltip {
+  font-size: 10px !important;
+}
+
+.ant-tooltip-inner {
+  padding: 8px !important;
+  min-height: 30px !important;
+  text-align: right;
+}
+
+/******************************* ant-switch *******************************/
+.ant-switch {
+  margin-left: 5px !important;
+}
+
+.ant-switch-checked {
+  background-color: #00b45a !important;
+}
+
+.ant-switch,
+.ant-switch-checked,
+.ant-checkbox-wrapper {
+  align-self: flex-end !important;
+}
+
+.ant-switch-inner {
+  font-size: 10px !important;
+}
+
+.ant-checkbox-inner {
+  border: 1px solid #d6d6d6;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #51acff;
+  border-color: #51acff;
+}
+
+/******************************* ant-radio *******************************/
+
+.ant-radio-wrapper {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+/******************************* ant-sider *******************************/
+
+.ant-collapse-content {
+  overflow: unset !important;
+}
+
+/******************************* ant-select *******************************/
+.ant-select-selection {
+  border-radius: 2px !important;
+}
+
+.ant-select-selection--multiple .ant-select-selection__choice {
+  border-radius: 0 !important;
+  float: right !important;
+  padding: 0 10px 0 20px !important;
+}
+
+.ant-select-selection--multiple .ant-select-selection__choice__remove {
+  left: 4px !important;
+  right: auto !important;
+}
+
+.ant-select-selection--multiple .ant-select-selection__rendered {
+  margin-right: 0 !important;
+}
+
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu .ant-select-dropdown-menu-item::after {
+  left: 12px !important;
+  right: auto !important;
+}
+
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item .ant-select-selected-icon {
+  left: 12px;
+  right: auto;
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  font-size: 12px !important;
+}
+
+/******************************* ant-button *******************************/
+.ant-btn {
+  border-radius: 2px;
+  font-size: 12px;
+  box-shadow: none;
+}
+
+.ant-btn:focus {
+  color: #888;
+  background-color: #e9e9e9;
+}
+
+.ant-btn-primary {
+  background-color: #0d94f6;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: #fff;
+  background-color: #1266f1;
+}
+
+.ant-input-number-sm {
+  height: 32px !important;
+}
+
+.ant-input-number-sm input {
+  height: 30px !important;
+}
+
+.ant-btn.ant-btn-circle,
+.rtlLayout #app .ant-btn.ant-btn-circle {
+  border-radius: 500rem !important;
+}
+
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+  margin-right: 8px;
+}
+
+.rtlLayout .ant-btn.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only) .anticon {
+  margin-right: -14px;
+  margin-left: unset;
+}
+
+.rtlLayout .ant-btn.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only) {
+  padding-right: 29px;
+  padding-left: 15px;
+}
+
+.rtlLayout .ant-btn-sm.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only) {
+  padding-right: 24px;
+  padding-left: unset;
+}
+
+.rtlLayout #app .ant-btn-sm.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only) .anticon {
+  margin-right: -17px;
+  margin-left: unset;
+}
+
+/*
+.anticon-close svg path {
+  d: path('M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 0 0 0 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z');
+}
+*/
+
+.ant-time-picker,
+.ant-time-picker-panel-inner {
+  direction: ltr;
+}
+
+/******************************* ant-badge *******************************/
+.ant-badge-count {
+  transform: translateX(50%) !important;
+}
+
+.ant-select-tree li span.ant-select-tree-switcher.ant-select-tree-switcher_close::after {
+  transform: rotate(-270deg) scale(0.59) !important;
+}
+
+/******************************* ant-message *******************************/
+.ant-message .anticon {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+.ant-input,
+.ant-select,
+.ant-select-selection,
+.ant-select-selection,
+.ant-select-dropdown,
+.ant-pagination-options-quick-jumper input {
+  font-size: 12px !important;
+  color: #333 !important;
+}
+
+.ant-select-dropdown {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  color: #333 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+input {
+  color: rgba(0, 0, 0, 0.65);
+  transition: all ease 0.5s;
+}
+
+.ant-input:focus,
+.ant-input:hover,
+.ant-pagination-options-quick-jumper input:hover,
+input:focus,
+input:focus {
+  border-color: #ccc !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+  border-color: #ccc !important;
+  box-shadow: none !important;
+}
+
+.ant-message-notice-content {
+  border-radius: 0 !important;
+}
+
+.ant-popover-message-title {
+  padding-right: 22px !important;
+}
+
+.ant-popover-buttons {
+  text-align: left !important;
+  margin-bottom: 4px !important;
+  direction: ltr !important;
+}
+
+.ant-popover-buttons button {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+.ant-popover-inner {
+  border-radius: 0 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+/******************************* ant-alert *******************************/
+
+.rtlLayout #app .ant-alert-with-description {
+  padding: 15px 25px 15px 15px !important;
+  border-radius: 0;
+}
+
+.rtlLayout .ant-alert {
+  padding: 8px 37px 8px 15px;
+  border-radius: 0;
+}
+
+.rtlLayout .ant-alert.ant-alert-no-icon {
+  padding: 8px 15px;
+}
+
+.ant-alert.ant-alert-no-icon {
+  padding: 8px 15px;
+}
+
+.rtlLayout .ant-alert-icon {
+  right: 16px;
+  left: auto;
+}
+
+.rtlLayout .ant-alert-close-icon {
+  font-size: 8px;
+  left: 16px;
+  right: auto;
+}
+
+/******************************* ant-modal *******************************/
+.ant-modal-wrap {
+  /* move scrollbar to right on modal */
+  direction: ltr !important;
+}
+
+.ant-modal-wrap .ant-modal {
+  direction: rtl !important;
+}
+
+div.ant-modal-header {
+  padding: 12px 24px;
+  border-radius: 0;
+  background: #1890ff;
+  border-bottom: 1px solid #1890ff;
+}
+
+.ant-modal-body,
+.ant-modal-footer {
+  padding: 15px !important;
+}
+
+span.ant-modal-close-x {
+  height: 47px;
+  line-height: 48px;
+  color: #fff;
+  font-size: 14px;
+}
+
+div.ant-modal-title {
+  font-size: 14px;
+  color: #fff;
+}
+
+.rtlLayout #app .ant-upload-list-item .anticon-cross {
+  left: 4px;
+  right: auto;
+}
+
+.rtlLayout #app .ant-upload-list-item-name {
+  padding-right: 22px;
+  padding-left: 0;
+}
+
+.rtlLayout #app .ant-upload.ant-upload-drag {
+  border-radius: 0;
+}
+
+.rtlLayout #app .ant-upload-list-item:hover .ant-upload-list-item-info {
+  background-color: #fafafa;
+}
+
+.rtlLayout #app .ant-upload-list-item-progress {
+  padding-left: 0;
+  padding-right: 26px;
+}
+
+.ant-progress-text {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.rtlLayout #app .ant-upload-list-item-info {
+  padding: 0 4px 0 12px;
+}
+
+/******************************* ant-tree *******************************/
+.ant-select-tree li ul {
+  margin: 0;
+  padding: 0 18px 0 0 !important;
+}
+
+/******************************* ant-notification *******************************/
+.rtlLayout .ant-notification-notice-close {
+  left: 22px;
+  right: auto;
+}
+
+/******************************* ant-breadcrumb, *******************************/
+.ant-breadcrumb {
+  direction: ltr !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+/* stylelint-enable no-descending-specificity */
+/* stylelint-enable no-duplicate-selectors */
+
+/******************************* ant-steps *******************************/
+
+.ant-steps-item-tail {
+  right: 0;
+  left: auto;
+}
+
+.ant-steps-label-vertical .ant-steps-item-tail {
+  padding: 0 24px;
+  margin-right: 48px;
+  margin-left: 0 !important;
+}
+
+.ant-steps-label-vertical .ant-steps-item-icon {
+  margin-right: 36px !important;
+  margin-left: 0 !important;
+}
+
+.ant-steps-label-vertical .ant-steps-item-content {
+  margin-top: 5px !important;
+}
+
+.ant-steps-item-title {
+  white-space: nowrap;
+  font-size: 12px !important;
+}
+
+/* added by vchakoshy */
+
+.ant-modal-close {
+  left: 0;
+  right: auto;
+}
+
+.ant-dropdown-menu {
+  text-align: right;
+}
+
+.ant-table-filter-dropdown .ant-checkbox-wrapper + span {
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+.ant-table-filter-dropdown .ant-dropdown-menu-item > label + span {
+  padding-right: 8px;
+}
+
+.ant-modal-footer {
+  text-align: left;
+}
+
+.ant-modal-footer button + button {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.ant-descriptions-item-label::after {
+  margin: 0 2px 0 8px;
+}
+
+.ant-col-24.ant-form-item-label,
+.ant-col-xl-24.ant-form-item-label,
+.ant-form-vertical .ant-form-item-label {
+  text-align: right;
+}
+
+.direction-ltr {
+  direction: ltr;
+}
+
+.input-ltr {
+  text-align: left;
+  direction: ltr;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-content:first-child,
+.ant-descriptions-bordered .ant-descriptions-item-label:first-child {
+  border-right: none;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-content:last-child,
+.ant-descriptions-bordered .ant-descriptions-item-label:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-descriptions-title {
+  margin-top: 28px;
+}
+
+.english-font {
+  font-family:
+    -apple-system,
+ BlinkMacSystemFont,
+ Segoe UI,
+ PingFang SC,
+    Hiragino Sans GB,
+ Microsoft YaHei,
+ Helvetica Neue,
+ Helvetica,
+ Arial,
+    sans-serif,
+ Apple Color Emoji,
+ Segoe UI Emoji,
+ Segoe UI Symbol !important;
+}
+
+.ant-badge-status-text {
+  margin-right: 8px;
+  white-space: normal;
+}
+
+.ant-col-1,
+.ant-col-2,
+.ant-col-3,
+.ant-col-4,
+.ant-col-5,
+.ant-col-6,
+.ant-col-7,
+.ant-col-8,
+.ant-col-9,
+.ant-col-10,
+.ant-col-11,
+.ant-col-12,
+.ant-col-13,
+.ant-col-14,
+.ant-col-15,
+.ant-col-16,
+.ant-col-17,
+.ant-col-18,
+.ant-col-19,
+.ant-col-20,
+.ant-col-21,
+.ant-col-22,
+.ant-col-23,
+.ant-col-24 {
+  float: right;
+}
+
+.ant-select-selection--single .ant-select-selection__rendered {
+  margin-right: 5px !important;
+  margin-left: 24px;
+}
+
+.ant-btn > .anticon {
+  line-height: 2 !important;
+}
+
+.ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child,
+.ant-table-small.ant-table-bordered .ant-table-thead > tr > th:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0 !important;
+}
+
+.ant-table-small.ant-table-bordered .ant-table-content {
+  border-right: none !important;
+}
+
+.report-table tr > th,
+.report-table tr > td {
+  padding: 1px !important;
+}

@@ -1,0 +1,18 @@
+variables:
+  BUILD_IMAGE_NAME: "$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA"
+  RELEASE_IMAGE_NAME: "$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:stable"
+
+stages:
+  - build-develop
+
+build-develop:
+#   tags: [kowsar]
+  retry: 2
+  stage: build-develop
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  script:
+#    - docker pull gitlab.abrbit.com:5555/camelon/kowsar-dashboard/master:stable
+    - docker build --tag "$RELEASE_IMAGE_NAME" .
+    - docker push "$RELEASE_IMAGE_NAME"
+    - docker-compose up -d
