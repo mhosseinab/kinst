@@ -218,9 +218,6 @@ func adminExportTavanirRequest(c *gin.Context) {
 		f.SetCellStyle(sheetID, toCharStr(j+1)+"1", toCharStr(j+1)+"1", titleFormat)
 	}
 
-	// http://0.0.0.0:8080/gw/admin/api/v1/export/request/
-	// http://tavanir.example.com/gw/admin/api/v1/export/excel/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiIiLCJleHAiOjE2MjcxMTM5ODl9.5rzc4NZ9opLc7KyTrz54NVQFPIygpn_E9Gs14PywCl8
-
 	i := 2
 
 	numberFormat, err := f.NewStyle(`{"number_format": 3}`)
